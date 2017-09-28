@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<script type="module" src="src/overwebs-button.js"></script>
+
+<title>OVERWEBS</title>
+
+
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+    background: #223;
+  }
+
+   :root {
+    --overwebs-window-size: 2560px;
+  }
+
+  overwebs-button {
+    margin: 20px;
+  }
+</style>
+
+<!-- build:remove -->
+<span id="browser-sync-binding"></span>
+<!-- endbuild -->
+
+<overwebs-button big blue><button>Cancel</button></overwebs-button>
+
+<overwebs-button big bigtext yellow><button>Yes</button></overwebs-button>
+
+<overwebs-button disabled yellow><a href="#test">Link</a></overwebs-button>
+
+<overwebs-button blue><span>Span</span></overwebs-button>
+
+<overwebs-button purple>
+  <div>Div</div>
+</overwebs-button>
+
+<overwebs-button block yellow><button>Button</button></overwebs-button>
+
+<overwebs-button disabled purple big bigtext><button>disabled</button></overwebs-button>
+
+<overwebs-button block blue><a href="#test">Link</a></overwebs-button>
+
+<script>
+  // Module load path
+  window.modulesAssetPath = function (module) {
+    if (module === 'overwebs-button') {
+      return '';
+    } else {
+      return `node_modules/${module}`;
+    }
+  }
+
+</script>

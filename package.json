@@ -1,0 +1,25 @@
+{
+  "name": "overwebs-button",
+  "description": "Overwatch style buttons",
+  "main": "overwebs-button.js",
+  "repository": "git@github.com:ruphin/overwebs-button.git",
+  "author": "Goffert van Gool",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-minify": "^0.2.0",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "dependencies": {
+    "gluonjs": "^2.0.0-preview.4",
+    "overwebs-fonts": "^1.0.0-rc1"
+  },
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp serve",
+    "publish": "git add overwebs-button.js"
+  }
+}
