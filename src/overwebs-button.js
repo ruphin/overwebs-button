@@ -1,5 +1,5 @@
-import { GluonElement, html } from '../gluonjs/gluon.js';
-import '../overwebs-fonts/overwebs-fonts.js';
+import { GluonElement, html } from 'gluonjs';
+import 'overwebs-fonts';
 
 class OverwebsButton extends GluonElement {
   get template() {

@@ -1,26 +1,33 @@
 {
   "name": "overwebs-button",
   "description": "Overwatch style buttons",
-  "main": "overwebs-button.js",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/overwebs-button.js",
+  "module": "dist/overwebs-button.js",
+  "exports": {
+    ".": "./dist/overwebs-button.js"
+  },
+  "files": [
+    "dist"
+  ],
   "repository": "git@github.com:ruphin/overwebs-button.git",
   "author": "Goffert van Gool",
   "license": "MIT",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-minify": "^0.2.0",
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.0",
-    "gulp-sourcemaps": "^2.6.1"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "gluonjs": "^2.0.2",
     "overwebs-fonts": "^1.0.0"
   },
-  "scripts": {
-    "build": "gulp",
-    "dev": "gulp serve",
-    "publish": "git add overwebs-button.js"
-  },
-  "version": "1.0.0"
+  "devDependencies": {
+    "happy-dom": "^20.14.5",
+    "vite": "^8.3.3",
+    "vitest": "^5.0.3"
+  }
 }
